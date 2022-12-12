@@ -6,7 +6,7 @@ struct bank{
 	char name[10];
 	char TransType;
 	double amount; 
-}c1,c2,c3,c4,c5;
+};
 
 int main (void){
 	int i,j;
@@ -29,10 +29,13 @@ int main (void){
 		printf("\n");
 	}
 	
+	maxwith=cus[2].amount;
+	
 	for(i=0; i<5; ++i){
 		if(cus[i].TransType=='W'){
 			totwith+=cus[i].amount;
-			if(maxwith<cus[i].amount){
+
+			if(maxwith>cus[i].amount){
 				maxwith=cus[i].amount;	
 				strcpy(maxwithname, cus[i].name);
 			}			
@@ -51,7 +54,7 @@ int main (void){
 	printf("Total deposit amount : %.2f\n",totdep);
 	printf("Total Withdrow amount : %.2f\n",totwith);
 	printf("Max deposit customer name : %s\n",maxdname);
-	printf("Max withdrow customer name : %s\n",maxwithname);
+	printf("Min withdrow customer name : %s\n",maxwithname);
 	
 	
 	return 0;
