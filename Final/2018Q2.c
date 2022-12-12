@@ -14,7 +14,7 @@ int main (void){
 	char maxdname[10];
 	char maxwithname[10];
 	
-	
+
 	struct bank cus[5];
 	
 	for(i=0; i<5; ++i){
