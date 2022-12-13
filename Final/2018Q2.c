@@ -29,17 +29,15 @@ int main (void){
 		printf("\n");
 	}
 	
-	maxwith=cus[2].amount;
 	
 	for(i=0; i<5; ++i){
 		if(cus[i].TransType=='W'){
+			maxwith=cus[i].amount;
 			totwith+=cus[i].amount;
 
-			if(maxwith>cus[i].amount){
-				maxwith=cus[i].amount;	
-				strcpy(maxwithname, cus[i].name);
-			}			
+			
 		}
+		
 		else{
 			totdep+=cus[i].amount;
 			
@@ -47,8 +45,16 @@ int main (void){
 				maxdip=cus[i].amount;
 				strcpy(maxdname, cus[i].name);
 			}			
+		}	
+	}
+	
+	for(j=0; j<5; ++j){
+		if(maxwith>cus[j].amount && cus[j].TransType=='W'){
+			strcpy(maxwithname, cus[i].name);
+			maxwith=cus[i].amount;
 		}
-		
+		else
+			printf("*\n");
 	}
 	
 	printf("Total deposit amount : %.2f\n",totdep);
