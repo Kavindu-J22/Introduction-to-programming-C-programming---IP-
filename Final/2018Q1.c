@@ -36,9 +36,10 @@ int main (void){
 			printf("\nRegistration Successfull..!");
 		}
 		else
-			printf("\n%c is Invalid Type..!",type);				
+			printf("Error..,\n%c is Invalid Type..!",type);				
 		
 	}
+	
 		puts("");
 		printf("1. Hospitality Management (H) Registered student : %dhtot  Total income : %lf\n",htot,hcal);
 		printf("1. Diploma in Marketing (M) Registered student : %dhtot  Total income : %lf\n",mtot,mcal);
