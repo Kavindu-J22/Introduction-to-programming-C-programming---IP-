@@ -38,7 +38,7 @@ int main (void){
 			printf("\n%c is Invalid Type..!",type);				
 		
 	}
-	
+		puts("");
 		printf("1. Hospitality Management (H) Registered student : %dhtot  Total income : %lf\n",htot,hcal);
 		printf("1. Diploma in Marketing (M) Registered student : %dhtot  Total income : %lf\n",mtot,mcal);
 		printf("1. Diploma in Finance (F) Registered student : %dhtot  Total income : %lf\n",ftot,fcal);
