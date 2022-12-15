@@ -6,6 +6,7 @@ int main (void){
 	double hcal=0,mcal=0,fcal=0;
 	
 	printf("******Our courses******\n");
+	puts("");
 		printf("1. Hospitality Management (H) - Fee : 1500\n");
 		printf("1. Diploma in Marketing (M) - Fee : 2000\n");
 		printf("1. Diploma in Finance (F)  - Fee : 2500\n");
