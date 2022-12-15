@@ -7,10 +7,10 @@ int main (void){
 	
 	printf("******Our courses******\n");
 	puts("");
-		printf("1. Hospitality Management (H) - Fee : 1500\n");
-		printf("1. Diploma in Marketing (M) - Fee : 2000\n");
-		printf("1. Diploma in Finance (F)  - Fee : 2500\n");
-		printf("1. No more Selection (N)\n");
+	printf("1. Hospitality Management (H) - Fee : 1500\n");
+	printf("1. Diploma in Marketing (M) - Fee : 2000\n");
+	printf("1. Diploma in Finance (F)  - Fee : 2500\n");
+	printf("1. No more Selection (N)\n");
 		
 
 	
